@@ -1,0 +1,35 @@
+
+/*Social Icons*/
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    }
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+    }
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+    }
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+    }
+
+.fa-snapchat-ghost {
+    background: #fffc00;
+    color: #FFFFFF;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+
+.fa-twitch {
+    background: #6441a5;
+    color: #000000;
+    }
