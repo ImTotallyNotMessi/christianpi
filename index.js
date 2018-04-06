@@ -1,5 +1,6 @@
 const express = require('express')
 const app = express()
+const fetch = require('isomorphic-fetch')
 app.use(express.static('public')) 
 //Home Page
 app.get('/', (req, res) => res.sendFile('index.html',{root: '.'}))
@@ -19,7 +20,7 @@ app.get('/proxy/:secret/:query', (req, res) => {
       .then(data=>{
        return data.text()
      })
-     .then(str=>{
+      .then(str=>{
        res.send(str)
      })
       .catch(e=>{
@@ -30,6 +31,6 @@ app.get('/proxy/:secret/:query', (req, res) => {
       console.log('INTRUDER!')
      res.sendFile('/keepout.html',{root:'.'})
     }
-  })  
+  })
 
 app.listen(3000, () => console.log('Webserver running on port 3000!'))
