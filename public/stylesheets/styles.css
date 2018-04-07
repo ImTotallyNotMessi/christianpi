@@ -1,8 +1,14 @@
 h1 {
     color: Black;
     font-weight: Bold;
+    font-size: 32px;
  }
- ul {
+
+p {
+    font-size: 14px;
+} 
+
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
