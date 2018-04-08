@@ -1,8 +1,10 @@
+* {
+    box-sizing: border-box
+}
+
 h1 {
     color: red;
 }
-
-* {box-sizing:border-box}
 
 .container {
     width: 100%;
@@ -16,10 +18,24 @@ h1 {
     color: white;
 }
 
-.html {width: 85%; background-color: #4CAF50;}
-.css {width: 85%; background-color: #2196F3;}
-.js {width: 50%; background-color: #f44336;}
-.php {width: 10%; background-color: #808080;}
+.html {
+    width: 85%;
+    background-color: #025705;
+    }
+.css {
+    width: 85%;
+    background-color: #065BB2;
+    }
+
+.js {
+    width: 50%;
+    background-color: #F21505;
+    }
+
+.php {
+    width: 10%;
+    background-color: #808080;
+    }
 
 .fa {
     padding: 20px;
