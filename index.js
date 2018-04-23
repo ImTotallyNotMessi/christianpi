@@ -1,6 +1,8 @@
+var browserify = require('browserify-middleware');
 const express = require('express')
 const app = express()
 const fetch = require('isomorphic-fetch')
+
 app.use(express.static('public')) 
 //Home Page
 app.get('/', (req, res) => res.sendFile('index.html',{root:'.'}))
