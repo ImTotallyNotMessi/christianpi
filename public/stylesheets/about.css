@@ -1,40 +1,53 @@
 * {
-    box-sizing: border-box
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
-    color: red;
+    font-weight: bold;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+body {
+    margin: 0;
 }
 
 .container {
     width: 100%;
-    background-color: #ddd;
+    background-color: rgb(221, 221, 221);
+}
+
+.skill {
+    color: rgb(0, 0, 0);
 }
 
 .skills {
-    text-align: right;
+    text-align: left;
     padding-right: 20px;
     line-height: 40px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .html {
-    width: 85%;
-    background-color: #025705;
+    width: 95%;
+    background-color: rgb(255, 115, 0);
     }
 .css {
-    width: 85%;
-    background-color: #065BB2;
+    width: 80%;
+    background-color: rgb(6, 91, 178);
     }
 
 .js {
     width: 50%;
-    background-color: #F21505;
+    background-color: rgb(242, 21, 5);
     }
 
 .php {
-    width: 10%;
-    background-color: #808080;
+    width: 0%;
+    background-color: rgb(128, 128, 128);
     }
 
 .fa {
@@ -46,27 +59,27 @@ h1 {
     }
 
 .fa-youtube {
-    background: #bb0000;
-    color: white;
+    background: rgb(187, 0, 0);
+    color: rgb(255, 255, 255);
     }
 
 .fa-twitter {
-    background: #55ACEE;
-    color: white;
+    background: rgb(85, 172, 238);
+    color: rgb(255, 255, 255);
     }
 
 .fa-instagram {
-    background: #125688;
-    color: white;
+    background: rgb(18, 86, 136);
+    color: rgb(255, 255, 255);
     }
 
 .fa-snapchat-ghost {
-    background: #fffc00;
-    color: #FFFFFF;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    background: rgb(255, 252, 0);
+    color: rgb(255, 255, 255);
+    text-shadow: -1px 0 rgb(0, 0, 0), 0 1px rgb(0, 0, 0), 1px 0 rgb(0, 0, 0), 0 -1px rgb(0, 0, 0);
     }
 
 .fa-twitch {
-    background: #6441a5;
-    color: #000000;
+    background: rgb(100, 65, 165);
+    color: rgb(0, 0, 0);
     }
