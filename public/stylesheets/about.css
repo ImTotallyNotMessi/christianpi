@@ -15,6 +15,25 @@ body {
     margin: 0;
 }
 
+.topnav {
+    overflow: hidden;
+    background-color: rgb(51, 51, 51);
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: rgb(242, 242, 242);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: rgb(221, 221, 221);
+    color: black;
+}
+
 .container {
     width: 100%;
     background-color: rgb(221, 221, 221);

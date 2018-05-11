@@ -1,7 +1,7 @@
 const express = require('express')
+const fetch = require('isomorphic-fetch')
 const path = require('path');
 const app = express()
-const fetch = require('isomorphic-fetch')
 
 app.use(express.static('public'))
 app.get('/', (req, res) => res.sendFile('views/index.html',{root:'.'}))
@@ -24,4 +24,4 @@ app.use(function (req, res, next) {
   res.status(404).sendFile('views/404.html',{root:'.'})
 })
 
-app.listen(3000, () => console.log('Webserver running on port 3000!'))
+app.listen(80, () => console.log('Webserver running on port 80!'))
