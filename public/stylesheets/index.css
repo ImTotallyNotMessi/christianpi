@@ -23,7 +23,7 @@ body {
 
 .topnav a:hover {
     background-color: rgb(221, 221, 221);
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 .content {
@@ -32,6 +32,7 @@ body {
 }
 
 .footer {
+    font-size: 12px;
     background-color: rgb(241, 241, 241);
     padding: 10px;
 }

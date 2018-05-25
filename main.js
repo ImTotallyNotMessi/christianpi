@@ -1,14 +1,23 @@
 const express = require('express')
 const fetch = require('isomorphic-fetch')
-const path = require('path');
+const path = require('path')
 const app = express()
 
 app.use(express.static('public'))
 app.get('/', (req, res) => res.sendFile('views/index.html',{root:'.'}))
 app.get('/about', (req, res) => res.sendFile('views/about.html',{root:'.'}))
-app.get('/stfu', (req, res) => res.sendFile('views/stfu.html',{root:'.'}))
+app.get('/video', (req, res) => res.sendFile('views/video.html',{root:'.'}))
 app.get('/specs', (req, res) => res.sendFile('views/specs.html',{root:'.'}))
 app.get('/downloads', (req, res) => res.sendFile('views/downloads.html',{root:'.'}))
+app.get('/twitch', (req, res) => {
+  res.status(301).redirect('https://twitch.tv/ImTotallyNotMessi')
+})
+app.get('/youtube', (req, res) => {
+  res.status(301).redirect('https://youtube.com/ImTotallyNotMessi')
+})
+app.get('/github', (req, res) => {
+  res.status(301).redirect('https://github.com/ImTotallyNotMessi')
+})
 app.get('/files/:file(*)', function(req, res, next){
   var filePath = path.join(__dirname, 'files', req.params.file);
 
@@ -24,4 +33,5 @@ app.use(function (req, res, next) {
   res.status(404).sendFile('views/404.html',{root:'.'})
 })
 
-app.listen(80, () => console.log('Webserver running on port 80!'))
+app.listen(3000, () => console.log('christianpi.tk is now online and running on port 3000!'))
+// app.listen(80, () => console.log('christianpi.tk is now online and running on port 80'))
