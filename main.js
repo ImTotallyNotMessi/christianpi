@@ -36,6 +36,5 @@ app.use(function (req, res, next) {
   res.status(404).sendFile('views/404.html',{root:'.'})
 })
 
-app.listen(3000, () => console.log('christianpi.tk is now online and running on port 3000!'))
-/* app.listen(80, 443 () => console.log('christianpi.tk is now online and running on port 80'))
-80 and 443 is the actual port, 3000 for local development */
+app.listen(80, () => console.log('christianpi.tk is now online and running on port 80'))
+/* app.listen(3000, () => console.log('christianpi.tk is now online and running on port 3000 for development')) */
