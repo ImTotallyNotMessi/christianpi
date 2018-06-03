@@ -12,15 +12,6 @@ app.get('/about', (req, res) => res.sendFile('views/about.html',{root:'.'}))
 app.get('/video', (req, res) => res.sendFile('views/video.html',{root:'.'}))
 app.get('/specs', (req, res) => res.sendFile('views/specs.html',{root:'.'}))
 app.get('/downloads', (req, res) => res.sendFile('views/downloads.html',{root:'.'}))
-app.get('/twitch', (req, res) => {
-  res.status(301).redirect('https://twitch.tv/ImTotallyNotMessi')
-})
-app.get('/youtube', (req, res) => {
-  res.status(301).redirect('https://youtube.com/ImTotallyNotMessi')
-})
-app.get('/github', (req, res) => {
-  res.status(301).redirect('https://github.com/ImTotallyNotMessi')
-})
 app.get('/files/:file(*)', function(req, res, next){
   var filePath = path.join('files', req.params.file)
 
@@ -31,6 +22,15 @@ app.get('/files/:file(*)', function(req, res, next){
     res.statusCode = 404
     res.send('Cant find that file, sorry!')
   })
+})
+app.get('/twitch', (req, res) => {
+  res.status(301).redirect('https://twitch.tv/ImTotallyNotMessi')
+})
+app.get('/youtube', (req, res) => {
+  res.status(301).redirect('https://youtube.com/ImTotallyNotMessi')
+})
+app.get('/github', (req, res) => {
+  res.status(301).redirect('https://github.com/ImTotallyNotMessi')
 })
 app.use(function (req, res, next) {
   res.status(404).sendFile('views/404.html',{root:'.'})
