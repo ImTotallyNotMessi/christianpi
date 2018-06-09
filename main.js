@@ -26,11 +26,20 @@ app.get('/files/:file(*)', function(req, res, next){
 app.get('/twitch', (req, res) => {
   res.status(301).redirect('https://twitch.tv/ImTotallyNotMessi')
 })
+app.get('/twitter', (req, res) => {
+  res.status(301).redirect('https://twitter.com/V3RTMessi')
+})
 app.get('/youtube', (req, res) => {
   res.status(301).redirect('https://youtube.com/ImTotallyNotMessi')
 })
 app.get('/github', (req, res) => {
   res.status(301).redirect('https://github.com/ImTotallyNotMessi')
+})
+app.get('/instagram', (req, res) => {
+  res.status(301).redirect('https://instagram.com/messi.gg')
+})
+app.get('/snapchat', (req, res) => {
+  res.status(301).redirect('https://snapchat.com/add/imtotallymessi')
 })
 app.use(function (req, res, next) {
   res.status(404).sendFile('views/404.html',{root:'.'})

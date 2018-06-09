@@ -38,4 +38,6 @@ body {
     font-weight: bold;
     background-color: rgb(241, 241, 241);
     padding: 10px;
+    position: absolute;
+    bottom: 0;
 }

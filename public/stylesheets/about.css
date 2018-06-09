@@ -38,6 +38,8 @@ body {
     font-weight: bold;
     background-color: rgb(241, 241, 241);
     padding: 10px;
+    position: absolute;
+    bottom: 0;
 }
 
 .fa {
@@ -46,6 +48,10 @@ body {
     width: 50px;
     text-align: center;
     text-decoration: none;
+    }
+
+.fa:hover {
+    opacity: 0.7;
     }
 
 .fa-youtube {
