@@ -4,11 +4,7 @@
 }
 
 body {
-    margin: 0;
-  }
-
-h1 {
-    text-align: center;
+  margin: 0;
 }
 
 .topnav {
@@ -34,10 +30,14 @@ h1 {
 .content {
     background-color: rgb(221, 221, 221);
     padding: 10px;
+    text-align: center;
 }
 
 .footer {
-    font-size: 12px;
+    font-size: 13px;
+    font-weight: bold;
     background-color: rgb(241, 241, 241);
     padding: 10px;
+    position: absolute;
+    bottom: 0;
 }
