@@ -25,8 +25,13 @@ app.get('/files/:file(*)', function(req, res, next){
     res.send('Cant find that file, sorry!')
   })
 })
+
+app.get('/munchiez', (req, res) => {
+  res.redirect(301, http://discordapp.com/oauth2/authorize?client_id=436740789721235456&scope=bot&permissions=2146958591)
+})
+
 app.use(function (req, res, next) {
   res.status(404).sendFile('views/404.html',{root:'.'})
 })
 
-app.listen(3000, () => console.log('christianpi.tk is now online and running on port 80'))
+app.listen(80, () => console.log('christianpi.tk is now online and running on port 80'))
