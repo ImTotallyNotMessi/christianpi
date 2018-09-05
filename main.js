@@ -13,6 +13,7 @@ app.get('/video', (req, res) => res.sendFile('views/video.html',{root:'.'}))
 app.get('/specs', (req, res) => res.sendFile('views/specs.html',{root:'.'}))
 app.get('/downloads', (req, res) => res.sendFile('views/downloads.html',{root:'.'}))
 app.get('/projects', (req, res) => res.sendFile('views/projects.html',{root:'.'}))
+app.get('/resume', (req, res)=> res.sendFile('views/resume.html',{root:'.'}))
 app.get('/files/:file(*)', function(req, res, next){
   var filePath = path.join('files', req.params.file)
 
