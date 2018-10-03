@@ -26,10 +26,6 @@ app.get('/files/:file(*)', function(req, res, next){
   })
 })
 
-app.get('/munchiez', (req, res) => {
-  res.redirect(301, http://discordapp.com/oauth2/authorize?client_id=436740789721235456&scope=bot&permissions=2146958591)
-})
-
 app.use(function (req, res, next) {
   res.status(404).sendFile('views/404.html',{root:'.'})
 })
