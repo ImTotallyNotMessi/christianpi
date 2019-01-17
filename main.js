@@ -3,6 +3,8 @@ const fetch = require('isomorphic-fetch')
 const path = require('path')
 const favicon = require('serve-favicon')
 const app = express()
+const jsonstore = require('jsonstore.io') 
+let db = new jsonstore(process.env.KEY)
 
 app.use(express.static('public'))
 app.use(favicon(path.join('public', 'assets', 'favicon.ico')))
@@ -11,6 +13,16 @@ app.get('/', (req, res) => res.sendFile('views/index.html',{root:'.'}))
 app.get('/about', (req, res) => res.sendFile('views/about.html',{root:'.'}))
 app.get('/downloads', (req, res) => res.sendFile('views/downloads.html',{root:'.'}))
 app.get('/resume', (req, res) => res.sendFile('views/resume.html',{root:'.'}))
+app.get('/url-shortener', (req, res) => res.sendFile('views/tyni.html',{root:'.'}))
+app.get('/shorten', (req, res) => {
+	db.write(req.query.key, {"url": req.query.url});
+	res.status(200);
+});
+app.get('/:key', (req, res) => {
+	db.read(req.params.key + "/url").then( (url) => {
+		res.redirect(url);
+	});
+}); 
 app.get('/twitch', (req, res) => {
   res.status(301).redirect('https://www.twitch.tv/imtotallynotmessi')
 })

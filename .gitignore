@@ -1,2 +1,3 @@
 .vscode
 /public/assets
+secret.env
