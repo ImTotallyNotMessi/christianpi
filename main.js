@@ -11,9 +11,7 @@ app.get('/', (req, res) => res.sendFile('views/index.html',{root:'.'}))
 app.get('/about', (req, res) => res.sendFile('views/about.html',{root:'.'}))
 app.get('/downloads', (req, res) => res.sendFile('views/downloads.html',{root:'.'}))
 app.get('/resume', (req, res) => res.sendFile('views/resume.html',{root:'.'}))
-app.get('/twitch', (req, res) => {
-  res.status(301).redirect('https://www.twitch.tv/imtotallynotmessi')
-})
+app.get('/twitch', (req, res) => res.sendFile('views/twitch.html'),{root:'.'})
 app.get('/github', (req, res) => {
   res.status(301).redirect('https://www.github.com/imtotallynotmessi/christianpi')
 })

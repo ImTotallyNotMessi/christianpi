@@ -5,6 +5,7 @@
 
 body {
   margin: 0;
+  background-color: rgb(128, 0, 0);
 }
 
 .topnav {
@@ -28,7 +29,6 @@ body {
 }
 
 .content {
-    background-color: rgb(221, 221, 221);
     padding: 10px;
     text-align: center;
 }
