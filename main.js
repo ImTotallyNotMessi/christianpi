@@ -14,6 +14,9 @@ app.get('/resume', (req, res) => res.sendFile('views/resume.html',{root:'.'}))
 app.get('/twitch', (req, res) => {
   res.status(301).redirect('https://www.twitch.tv/imtotallynotmessi')
 })
+app.get('/youtube', (req, res) => {
+  res.status(301).redirect('https://www.youtube.com/imtotallynotmessi')
+})
 app.get('/github', (req, res) => {
   res.status(301).redirect('https://www.github.com/imtotallynotmessi')
 })
